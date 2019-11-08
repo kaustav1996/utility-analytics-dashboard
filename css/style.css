@@ -7600,9 +7600,9 @@ sub {
   .nav-header .brand-logo {
     z-index: 999; }
     .nav-header .brand-logo a {
-      padding-top: 30px;
-      padding-left: 30px;
-      padding-bottom: 20px;
+      padding-top: 10%;
+      padding-left: 10%;
+      padding-bottom: 5%;
       display: block; }
       .nav-header .brand-logo a i {
         font-size: 1.375rem; }
@@ -8288,16 +8288,18 @@ The smaller device rules always should write below the bigger device rules
 Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Component
 */
 [data-sidebar-style="full"][data-layout="vertical"] .menu-toggle .nav-header {
+  background-color: #fff;
   width: 3.75rem; }
   [data-sidebar-style="full"][data-layout="vertical"] .menu-toggle .nav-header .brand-logo {
     z-index: 999; }
     [data-sidebar-style="full"][data-layout="vertical"] .menu-toggle .nav-header .brand-logo a {
-      padding: 1.607rem 1.0625rem;
+      padding: 10% 10% 10% 10%;
       text-align: center; }
       [data-sidebar-style="full"][data-layout="vertical"] .menu-toggle .nav-header .brand-logo a b img {
+        padding-top:15px;
         margin-top: 0.4375rem; }
   [data-sidebar-style="full"][data-layout="vertical"] .menu-toggle .nav-header .nav-control .hamburger .line {
-    background-color: #464a53 !important; }
+    background-color: #fff !important; }
 
 [data-sidebar-style="full"][data-layout="vertical"] .menu-toggle .header {
   margin-left: 3.75rem;
@@ -8450,8 +8452,89 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
     [data-sidebar-style="mini"] .nav-header .brand-logo {
       z-index: 999; }
       [data-sidebar-style="mini"] .nav-header .brand-logo a {
+        background-color: #fff !important;
         padding: 1.607rem 1.0625rem; }
         [data-sidebar-style="mini"] .nav-header .brand-logo a b img {
+          background-color: #fff !important;
+          margin-top: 0.4375rem; }
+    [data-sidebar-style="mini"] .nav-header .nav-control {
+      z-index: -1; }
+      [data-sidebar-style="mini"] .nav-header .nav-control .hamburger {
+        left: 3.75rem !important; }
+        [data-sidebar-style="mini"] .nav-header .nav-control .hamburger .line {
+          background-color: #464a53 !important; }
+    [data-sidebar-style="mini"] .nav-header .brand-title {
+      display: none; }
+    [data-sidebar-style="mini"] .nav-header .hamburger {
+      display: none; }
+  [data-sidebar-style="mini"] .header-content {
+    margin-left: 0; }
+    [data-sidebar-style="mini"] .header-content .header-left {
+      margin-left: 0.625rem; }
+      [data-sidebar-style="mini"] .header-content .header-left .drop-down {
+        top: 0.3125rem; }
+  [data-sidebar-style="mini"] .nav-user {
+    padding: 1.25rem 0.9375rem 0.9375rem; }
+    [data-sidebar-style="mini"] .nav-user img {
+      width: 2.1875rem;
+      height: 2.1875rem;
+      margin-bottom: 0.625rem; }
+    [data-sidebar-style="mini"] .nav-user h5,
+    [data-sidebar-style="mini"] .nav-user p {
+      display: none; }
+    [data-sidebar-style="mini"] .nav-user i {
+      margin-top: 0.9375rem;
+      display: block; }
+    [data-sidebar-style="mini"] .nav-user .dropdown-menu {
+      left: 2.8125rem !important;
+      top: 1.375rem !important; }
+  [data-sidebar-style="mini"] .nk-sidebar {
+    width: 3.75rem;
+    overflow: visible;
+    position: absolute; }
+    [data-sidebar-style="mini"] .nk-sidebar .nav-text {
+      display: none; }
+    [data-sidebar-style="mini"] .nk-sidebar .slimScrollDiv,
+    [data-sidebar-style="mini"] .nk-sidebar .nk-nav-scroll {
+      overflow: visible !important; }
+    [data-sidebar-style="mini"] .nk-sidebar .metismenu li {
+      position: relative; }
+      [data-sidebar-style="mini"] .nk-sidebar .metismenu li a {
+        padding: 0.8125rem 0.9375rem; }
+      [data-sidebar-style="mini"] .nk-sidebar .metismenu li > ul {
+        position: absolute;
+        left: 3.75rem;
+        top: 2.9375rem;
+        width: 11.875rem;
+        z-index: 1001;
+        display: none;
+        padding-left: 1px; }
+        [direction="rtl"]:not([data-layout="horizontal"])[data-sidebar-style="mini"] .nk-sidebar .metismenu li > ul {
+          left: auto;
+          right: 3.75rem; }
+    [data-sidebar-style="mini"] .nk-sidebar .metismenu > li > a.has-arrow:after {
+      display: none; }
+    [data-sidebar-style="mini"] .nk-sidebar .metismenu .nav-label,
+    [data-sidebar-style="mini"] .nk-sidebar .metismenu .nav-badge {
+      display: none; }
+  [data-sidebar-style="mini"] .content-body {
+    margin-left: 3.75rem; }
+  [data-sidebar-style="mini"] .footer {
+    padding-left: 3.75rem; }
+  [data-sidebar-style="mini"][data-layout="vertical"] .nk-sidebar .metismenu > li:nth-last-child(-n + 3) > ul {
+    bottom: 2.9375rem;
+    top: auto; } }
+
+    @media only screen and (min-width: 768px) {
+  [data-sidebar-style="mini"] .nav-header {
+    width: 3.75rem; }
+    [data-sidebar-style="mini"] .nav-header .brand-logo {
+      z-index: 999; }
+      [data-sidebar-style="mini"] .nav-header .brand-logo a {
+        background-color: #fff !important;
+        padding: 1.607rem 1.0625rem; }
+        [data-sidebar-style="mini"] .nav-header .brand-logo a b img {
+          background-color: #fff !important;
           margin-top: 0.4375rem; }
     [data-sidebar-style="mini"] .nav-header .nav-control {
       z-index: -1; }
@@ -9037,6 +9120,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
   position: fixed; }
 
 [data-header-position="fixed"][data-sidebar-position="fixed"][data-sidebar-style="overlay"][data-layout="vertical"][data-container="boxed"] .nk-sidebar {
+  
   position: absolute; }
 
 .sidebar-right {
