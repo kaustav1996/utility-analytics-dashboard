@@ -253,7 +253,6 @@ session_start();
                                 <i class="icon-speedometer menu-icon"></i><span class="nav-text">Dashboard</span>
                             </a>
                             <ul aria-expanded="false">
-                                <li><a href="./dashboard.html">Landing Page</a></li>
                                 <li><a href="./overview.php">System Overview</a></li>
                                 <li><a href="./midnight.php">Midnight Dashboard</a></li>
                                 <li><a href="./interval.php">Interval Dashboard</a></li>
